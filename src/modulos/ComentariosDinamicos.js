@@ -1,6 +1,6 @@
 import $ from "jquery";
 import Direccion from "./posicionamineto/Direccion";
-
+import "../../css/estilos-dynamics.css"
 
 (function(){
 
