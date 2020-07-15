@@ -308,6 +308,26 @@ tiene que incorparar los estilos necesarios para mostrarse.
 </html>
 ```
 
+- data-pos
+    - top / arriba
+    - bottom / abajo (default)
+    - left / iquierda
+    - right / derecha
+- data-evt
+    - click 
+    - hover (default)
+
+#### SPA
+
+```js
+import "dynamics-tips/css/estilos-dynamics.css";
+import Personalizado from "dynamics-tips/modulos/Personalizado";
+
+// Cuando queremos llamar al toast simplemente lo hacemos a través de su método 
+// estático
+
+Personalizado.iniciar({conf}) // Conf es la configuración antes vista en los ejemplos
+```
 ## Licencia
 
 (MIT) (c) 2020 Dynamics Tips.
