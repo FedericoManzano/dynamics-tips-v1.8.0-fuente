@@ -1,4 +1,4 @@
-# Dynamics Tips v1.5.0
+# Dynamics Tips v1.8.0
 
 Librería que algunas funcionalidades para añadir objetos dinámicos a los elementos de una página web.
 A través de estos elementos se incorporan descripciones, enlaces y eventos que permiten mostrar una buena cantidad de información en espacios reducidos.
@@ -11,7 +11,7 @@ Los elementos más conocidos son los tooltips dinámicos que se muestran alreded
 
 Disponemos varias formas de descargar la librería. La más rápida y sensilla es a través del CDN del archivo `dynamics.bundle.min.js`. 
 
-[https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.5.0-fuente/master/dist/js/dynamics.bundle.min.js](https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.5.0-fuente/master/dist/js/dynamics.bundle.min.js)
+[https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js](https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js)
 
 En este caso no hace falta incorporar los estilos de manera independiente ya vienen incluidos en el archivo bundle de la librería.
 
@@ -22,7 +22,7 @@ En este caso no hace falta incorporar los estilos de manera independiente ya vie
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.5.0-fuente/master/dist/js/dynamics.bundle.min.js"></script>
+        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js"></script>
     
         <title>Dynamics Tips v1.5.0</title>
     </head>
@@ -40,15 +40,15 @@ Otra forma es también agregar los estilos de manera separada a la lógica de la
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.5.0-fuente/master/dist/css/estilos-dynamics.min.css">
+        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/css/estilos-dynamics.min.css">
     
-        <title>Dynamics Tips v1.5.0</title>
+        <title>Dynamics Tips v1.8.0</title>
     </head>
     <body>
         <!-- Contenido de la página -->
 
 
-        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.5.0-fuente/master/dist/js/dynamics.min.js"></script>
+        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.min.js"></script>
     </body>
 </html>
 ```
@@ -228,6 +228,8 @@ En este ejemplo no se le envia ningún parámetro al toast y se muestra el Toast
 </script>
 ```
 
+
+
 #### Ejemplo 3 
 
 ```html
@@ -260,7 +262,51 @@ import Toast from "dynamics-tips/modulos/Toast";
 Toast.toast({conf}) // Conf es la configuración antes vista en los ejemplos
 ```
 
+### Personalizados
 
+Podemos añadir elementos dinámicos personalizados pasando los argumentos necesarios para su funcionamiento.
+
+- Necesitamos una clase disparadora que va a estar incluida dentro del elemento disparador. 
+El nombre de la clase es a elección (puede ser el que gusten). 
+
+- El elemento que se va a mostrar tiene que tener una clase con un nombre a elección pero en este caso
+tiene que incorparar los estilos necesarios para mostrarse. 
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/css/estilos-dynamics.min.css">
+
+        <!-- Estilos para el elemento -->
+        <style>
+            .elemento {
+                padding: 5px;
+                border-radius: 3px;
+                background-color: rgba(0, 0, 0, 0.863);
+                color: white;
+                font-size: 13px;
+            }
+        </style>
+        <title>Dynamics Tips v1.8.0</title>
+    </head>
+    <body>
+        <!-- Contenido de la página -->
+        <button class="disparador" data-pos="derecha" data-evt="click"
+            data-info="Esto es un elemento personalizado">Boton</button>
+
+        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.min.js"></script>
+        <script>
+            // Enviamos el nombre de las clases tanto del 
+            // disparador como del elemento
+            DY.PerInit({ori: "disparador", ele: "elemento"})
+        </script>
+    </body>
+</html>
+```
 
 ## Licencia
 
