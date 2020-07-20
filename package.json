@@ -17,7 +17,6 @@
     "dinamicos",
     "comentarios"
   ],
-
   "files": [
     "dist/{css,js}/*.{css,js,map}",
     "src/{modulos}/**/*.{js}",
@@ -34,12 +33,13 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.10.5",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.1.0",
     "braces": "^3.0.2",
     "css-loader": "^3.6.0",
+    "lodash": "^4.17.19",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
