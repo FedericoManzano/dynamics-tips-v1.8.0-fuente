@@ -11,7 +11,7 @@ Los elementos más conocidos son los tooltips dinámicos que se muestran alreded
 
 Disponemos varias formas de descargar la librería. La más rápida y sensilla es a través del CDN del archivo `dynamics.bundle.min.js`. 
 
-[https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js](https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js)
+[https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/js/dynamics.bundle.min.js](https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/js/dynamics.bundle.min.js)
 
 En este caso no hace falta incorporar los estilos de manera independiente ya vienen incluidos en el archivo bundle de la librería.
 
@@ -22,7 +22,7 @@ En este caso no hace falta incorporar los estilos de manera independiente ya vie
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.bundle.min.js"></script>
+        <script src="https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/js/dynamics.bundle.min.js"></script>
     
         <title>Dynamics Tips v1.5.0</title>
     </head>
@@ -40,7 +40,7 @@ Otra forma es también agregar los estilos de manera separada a la lógica de la
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/css/estilos-dynamics.min.css">
+        <link rel="stylesheet" href="https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/css/estilos-dynamics.min.css">
     
         <title>Dynamics Tips v1.8.0</title>
     </head>
@@ -48,7 +48,7 @@ Otra forma es también agregar los estilos de manera separada a la lógica de la
         <!-- Contenido de la página -->
 
 
-        <script src="https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/js/dynamics.min.js"></script>
+        <script src="https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/js/dynamics.min.js"></script>
     </body>
 </html>
 ```
